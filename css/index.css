@@ -1,0 +1,196 @@
+html,body{
+    overflow: hidden;
+    width: 100%;height:100%;
+    color:#aaa;
+}
+.box{
+    /*background: #F4EFD1;*/
+    background: url(../img/bg2.jpg);
+}
+.container-fluid{
+    height:100%;
+}
+.container-fluid>.row{
+    height:100%;
+}
+.container-fluid>.row>div[class*=col]{
+    height:100%;
+}
+.left1{
+    background: #000;
+    opacity: 0.3;
+    /*background:url(../img/4.png);*/
+    position: relative;
+    left:0;top:0;
+}
+.left{
+    position: absolute;
+    left:0;top:0;
+    z-index: 2;
+}
+.img img{
+    display: block;
+    margin:0 auto;
+}
+.search{
+    margin-top:20px;
+}
+.form-control{
+    background: none;
+}
+.searchText{
+    top:0;
+    color:#FFF;
+}
+.to_do_list{
+    margin-top:15px;
+}
+.to_do_list:before,.to_do_list:after{
+    content: "";
+    display: block;
+}
+.to_do_list:after{
+    clear: both;
+}
+input{
+    border: none;
+    /*background: #eee;*/
+    background:none;
+    float: left;
+}
+.searchicon{
+    background: none;
+    top:0px;
+    color:#000;
+}
+.searchText{
+    background:none;
+}
+input:focus{
+    outline: none;
+    border: 1px solid #000;
+}
+.list{
+    overflow: hidden;
+}
+.ok{
+    cursor: pointer;
+}
+.delBtn{
+    float: right;visibility: hidden;
+    /*东西在只不过隐藏了*/
+    opacity: 0;
+    transition: opacity .4s ease;
+}
+.delBtn:hover{
+    color:red;
+}
+.list:hover .delBtn{
+    visibility: visible;
+    opacity: 1;
+}
+.addlist{
+    position: absolute;
+    left:20px;bottom:20px;
+    cursor: pointer;
+
+}
+.success{
+    position:absolute;
+    left:20px;top:20px;
+    color:#000;
+    font-size: 16px;
+}
+.rightaddlist{
+    position: absolute;
+    left:0px;top:20px;
+    cursor: pointer;
+
+}
+.righttodolist1{
+    opacity: 0.3;
+    background: #000;
+    height:100%;
+    margin-top:20px;
+    position:relative;
+
+}
+.list_info{
+    color:#000;
+    font-size: 16px;
+    padding:0 0 18px 3px;
+}
+.righttodolist{
+    margin-top:20px;
+    height:100%;
+    position:absolute;
+    top:0;
+    z-index: 2;
+}
+.rightaddlist span{
+    color:#000;
+}
+.right .title{
+    overflow: hidden;
+    font-size: 30px;
+    line-height: 50px;
+    border-bottom: 2px solid #888;
+    text-align: center;
+    color:#222;
+}
+/*.title1{*/
+    /*float:left;*/
+    /*width:50%;*/
+    /*background: #A00200;*/
+    /*border-right:1px solid #fff;*/
+/*}*/
+/*.title2{*/
+    /*float:left;*/
+    /*width:50%;*/
+    /*background: #A00200;*/
+/*}*/
+.successnum{
+    position:absolute;
+    top:0;left:70px;
+    width:14px;
+    height:14px;
+    border-radius: 50%;
+    background: red;
+    font-size: 14px;
+    text-align: center;
+    line-height: 14px;
+}
+.title h3{
+    float: left;
+}
+.liebiao{
+    color:#f0f0f0;
+}
+.addcon{
+    float: right;
+    font-size: 25px;
+    line-height: 80px;
+}
+.conlist{
+    border-bottom: 1px solid #888;
+    overflow: hidden;
+    padding: 5px 0;
+}
+.done{
+    float: left;margin-right: 5px;
+}
+.conlist input{
+    float: left;width: 60%;
+    background: none;
+    border: none;
+    color:#000;
+}
+.conlist .delBtnCon{
+    float: right;visibility: hidden;
+    opacity: 0;
+    transition: opacity .4s linear;
+}
+.conlist:hover .delBtnCon{
+    visibility: visible;
+    opacity: 1;
+}
